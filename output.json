@@ -1,0 +1,55 @@
+{
+    "pages": [
+        {
+            "page_number": 1,
+            "content": [
+                {
+                    "type": "paragraph",
+                    "section": "Extraction",
+                    "sub_section": "Objective",
+                    "text": "Your task is to build a Python program that parses a PDF file and extracts its content into a well-structured JSON format. The extracted JSON must preserve the hierarchical organization of the document (e.g., sections, sub-sections, and content blocks) while clearly identifying different data types."
+                },
+                {
+                    "type": "paragraph",
+                    "section": "Extraction",
+                    "sub_section": "Requirements",
+                    "text": "1. Input & Output ○ Input: A PDF file (sample provided below). ○ Output: A JSON file containing the extracted content. 2. JSON Structure The JSON must: ○ Maintain page-level hierarchy. ○ Capture the type of data: ■ paragraph ■ table ■ chart ○ Include section and sub-section names where applicable. ○ Ensure that text is extracted in a clean and readable format. Example JSON (illustrative only): { \"pages\": [ { \"page_number\": 1, \"content\": ["
+                }
+            ]
+        },
+        {
+            "page_number": 2,
+            "content": [
+                {
+                    "type": "paragraph",
+                    "section": null,
+                    "sub_section": null,
+                    "text": "{ \"type\": \"paragraph\", \"section\": \"Introduction\", \"sub_section\": \"Background\", \"text\": \"This is an example paragraph extracted from the PDF...\" }, { \"type\": \"table\", \"section\": \"Financial Data\", \"description\": null, \"table_data\": [ [\"Year\", \"Revenue\", \"Profit\"], [\"2022\", \"$10M\", \"$2M\"], [\"2023\", \"$12M\", \"$3M\"] ] }, { \"type\": \"chart\", \"section\": \"Performance Overview\", \"Table_data\": [ [XLabel, YLabel], [\"2022\", \"$10M\"], [\"2023\", \"$12M\",] \"description\": \"Bar chart showing yearly growth...\" } ] } ] }"
+                },
+                {
+                    "type": "paragraph",
+                    "section": "○ You may use any Python libraries/tools for parsing and extraction (e.g.,",
+                    "sub_section": null,
+                    "text": "pdfplumber, PyMuPDF, camelot, pytesseract, pdfminer, etc.). ○ Your program should be modular, cleanly structured, and well-documented."
+                },
+                {
+                    "type": "paragraph",
+                    "section": "○ The solution must be robust enough to handle different types of content.",
+                    "sub_section": "4. Deliverables",
+                    "text": "○ A Python script (.py file) that takes a PDF file as input and produces a JSON file as output. ○ A brief README with instructions on: ■ How to install dependencies. ■ How to run the program."
+                }
+            ]
+        },
+        {
+            "page_number": 3,
+            "content": [
+                {
+                    "type": "paragraph",
+                    "section": "Sample PDF File",
+                    "sub_section": null,
+                    "text": "Download PDF"
+                }
+            ]
+        }
+    ]
+}
